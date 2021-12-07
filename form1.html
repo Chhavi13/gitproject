@@ -1,0 +1,87 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Register Form</title>
+</head>
+<body>
+    <script src="script.js"></script>
+    
+   
+ <form onsubmit="event.preventDefault();return validateForm(); onFormSubmit();">
+  <table>
+   <tr>
+    <td>Name :</td>
+    <td><input type="text" name="fullname" id="fullname" required></td>
+   </tr>
+   <tr>
+    <td>Address :</td>
+    <td><textarea cols="20" rows="5" name="address" id="address"required> </textarea> </td>
+   </tr>
+   <tr>
+    <td>Gender :</td>
+    <td>
+     <input type="radio" name="gender" id="male" value="male"> Male
+     <input type="radio" name="gender" id="female" value="female"> Female
+
+    </td>
+    <!-- <button  id="btn1"></button> -->
+  </tr>
+   <tr>
+    <td>Email :</td>
+    <td><input type="email"name="email"id="email1"required></td>
+   </tr>
+   <tr>
+    <td>class :</td>
+    <td>
+     <select name="course" id="course"required>  
+<option value="Course">Course</option>  
+<option value="BCA">BCA</option>  
+<option value="BBA">BBA</option>  
+<option value="B.Tech">B.Tech</option>  
+<option value="MBA">MBA</option>  
+<option value="MCA">MCA</option>  
+<option value="M.Tech">M.Tech</option>  
+</select> 
+
+    </td>
+   </tr>
+   <tr>
+    <td>phone :</td>
+    <td><input type="phone" name="phone" id="phone"required></td>
+   </tr>
+   <tr>
+    <td><input type="submit" value="Submit"></td>
+    
+   </tr>
+   <tr>
+    <td> <input type="reset" value="Reset"></td>
+    
+   </tr>
+
+
+  </table>
+
+ </form>
+ <table class="list" border="1" id="info">
+     <thead>
+    <tr>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Gender</th>
+        <th>Email</th>
+        <th>class</th>
+        <th>Phone</th>
+
+       
+    </tr></thead>
+     <tbody>
+
+     </tbody>
+        
+  
+       
+</table>
+
+</body>
+</html>
